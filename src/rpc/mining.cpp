@@ -1286,10 +1286,6 @@ static const CRPCCommand commands[] =
     { "mining",             "pprpcsb",                &pprpcsb,                {"header_hash","mix_hash", "nonce"} },
     { "mining",             "getkawpowhash",          &getkawpowhash,          {"header_hash", "mix_hash", "nonce", "height"} },
 
-    /* Coin generation */
-    { "generating",         "getgenerate",            &getgenerate,            {}  },
-    { "generating",         "setgenerate",            &setgenerate,            {"generate", "genproclimit"}  },
-
     { "generating",         "generatetoaddress",      &generatetoaddress,      {"nblocks","address","maxtries"} },
 
     { "util",               "estimatefee",            &estimatefee,            {"nblocks"} },
